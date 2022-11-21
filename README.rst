@@ -1,12 +1,12 @@
 pyroku-ng
-===========
+=========
 
 This is a fork of https://github.com/jcarbaugh/python-roku" to add "keydown", "keyup" so
 that keys can be pushed and held. It was taken from this PR: https://github.com/jcarbaugh/python-roku/pull/78/files#diff-9724470a705d4e4bdb945b96d72d9bdca4e5896c35da336df0a70330629f02f1
 which wasn't getting merged into the original library.
 
 Original readme below
-===========
+=====================
 
 Screw remotes. Control your `Roku <http://www.roku.com>`_ via Python.
 
