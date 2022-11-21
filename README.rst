@@ -1,4 +1,11 @@
-python-roku
+pyroku-ng
+===========
+
+This is a fork of https://github.com/jcarbaugh/python-roku" to add "keydown", "keyup" so
+that keys can be pushed and held. It was taken from this PR: https://github.com/jcarbaugh/python-roku/pull/78/files#diff-9724470a705d4e4bdb945b96d72d9bdca4e5896c35da336df0a70330629f02f1
+which wasn't getting merged into the original library.
+
+Original readme below
 ===========
 
 Screw remotes. Control your `Roku <http://www.roku.com>`_ via Python.
@@ -12,7 +19,7 @@ Installation
 
 ::
 
-    pip install roku
+    pip install roku-ng
 
 
 Usage
@@ -34,6 +41,13 @@ The Roku object has a method for each of the buttons on the remote.
     >>> roku.home()
     >>> roku.right()
     >>> roku.select()
+
+To support keyup and keydown events simply pass "keyup" or "keydown" when you call the command.
+::
+
+    >>> roku.right("keydown")
+    >>> roku.right("keyup")
+
 
 To see a full list of available commands, use the *commands* property.
 ::

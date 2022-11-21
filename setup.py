@@ -6,13 +6,13 @@ readme = f.read()
 f.close()
 
 setup(
-    name="roku",
-    version="4.1.0",
+    name="pyroku-ng",
+    version="4.1.1",
     description="Client for the Roku media player",
     long_description=readme,
-    author="Jeremy Carbaugh",
+    author="Jeremy Carbaugh, Foxy82",
     author_email="jcarbaugh@gmail.com",
-    url="https://github.com/jcarbaugh/python-roku",
+    url="https://github.com/foxy82/python-roku",
     packages=find_packages(),
     install_requires=["requests<3",],
     license="BSD License",
